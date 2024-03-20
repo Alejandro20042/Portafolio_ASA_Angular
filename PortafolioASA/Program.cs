@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<PortafolioServices>(); 
 
 builder.Services.AddCors(options => options.AddPolicy("AngularClient", policy =>  {
-    policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+    policy.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
 }));
 
 var app = builder.Build();
