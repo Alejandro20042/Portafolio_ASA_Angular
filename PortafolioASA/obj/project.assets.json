@@ -1230,23 +1230,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cd20\\.nuget\\packages\\": {},
+    "C:\\Users\\aleja\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cd20\\Desktop\\123\\Portafolio_ASA\\PortafolioASA\\PortafolioASA.csproj",
+      "projectUniqueName": "C:\\Users\\aleja\\OneDrive\\Escritorio\\AngularApi\\Portafolio_ASA_Angular\\PortafolioASA\\PortafolioASA.csproj",
       "projectName": "PortafolioASA",
-      "projectPath": "C:\\Users\\cd20\\Desktop\\123\\Portafolio_ASA\\PortafolioASA\\PortafolioASA.csproj",
-      "packagesPath": "C:\\Users\\cd20\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cd20\\Desktop\\123\\Portafolio_ASA\\PortafolioASA\\obj\\",
+      "projectPath": "C:\\Users\\aleja\\OneDrive\\Escritorio\\AngularApi\\Portafolio_ASA_Angular\\PortafolioASA\\PortafolioASA.csproj",
+      "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aleja\\OneDrive\\Escritorio\\AngularApi\\Portafolio_ASA_Angular\\PortafolioASA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\cd20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1298,6 +1298,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1306,7 +1324,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,7 +4,7 @@
 
         <nav class="flex items-center justify-between mb-10">
             <img src="https://i.ibb.co/8dH67nL/navbar-logo.png" alt="Logo">
-            <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Descargar mi CV</button>
+            <a class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500" href="/PortafolioAngularASA/src/assets/Currículum Vitae CV Alejandro Sillas  (1).pdf" download="cv.pdf" >Descargar mi CV</a>
         </nav>
 
         <div class="text-center mb-16">
@@ -30,13 +30,13 @@
                     <i data-feather="coffee"></i>
                 </div>
                 <h4 class="font-medium text-gray-700 text-lg mb-4">Proyectos de éxito</h4>
-                <p class="font-normal text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                <p class="font-normal text-gray-500 text-md">Desarrollo de soluciones innovadoras que optimizan procesos, aumentan la eficiencia y <br> superan las expectativas del cliente. Experiencia en liderar proyectos <br> integrales que mejoran la experiencia del usuario y maximizan el <br> rendimiento del producto, generando reconocimiento por su calidad y eficacia.</p>
             </div>
         </div>
         
 
         <div class="mb-16">
-            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-4">Portafolio</h1>
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-4">Proyectos</h1>
             <p class="font-normal text-gray-500 text-xs md:text-base mb-10">Aquí he traído mis trabajos más importantes y favoritos como profesional.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-gray-50 px-8 py-10 rounded-md">
@@ -72,7 +72,7 @@
 
         <div class="text-center mb-16">
             <h1 class="font-normal text-gray-300 text-3xl md:text-6xl lg:text-7xl mb-10">No midas tus habilidades en porcentajes!</h1>
-            <p class="font-medium text-gray-700 text-xs md:text-base">En mis muchos años de experiencia, uso C# para proyectos backend y Boostrap para proyectos front-end. Soy un ávido programador.</p>
+            <p class="font-medium text-gray-700 text-xs md:text-base">En mis pocos años de experiencia, eh usado C# para proyectos backend y Angular para proyectos front-end. Soy un ávido programador.</p>
         </div>
 
         <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Experiencia</h1>
@@ -81,36 +81,50 @@
     </section>
 
     <footer class="py-10 md:py-16 mb-20 md:mb-40 lg:mb-52 w-full max-w-screen-xl mx-auto px-4">
-        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Contacto</h1>
-        <div class="overflow-x-auto">
-            <table class="table-auto w-full">
-                <thead>
-                    <tr>
-                        <th class="px-4 py-2">ID</th>
-                        <th class="px-4 py-2">Teléfono</th>
-                        <th class="px-4 py-2">Correo</th>
-                        <th class="px-4 py-2">Edad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        @for(driver of drivers; track drivers.indexOf) {
-                            <td>{{ driver.id }}</td>
-                            <td>{{ driver.telefono }}</td>
-                            <td>{{ driver.correo }}</td>
-                            <td>{{ driver.edad }}</td>
-                        }
-                    </tr>
-                </tbody>
-            </table>
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Contacto</h1>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Teléfono</th>
+                            <th class="px-4 py-2">Correo</th>
+                            <th class="px-4 py-2">Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @for(driver of drivers; track drivers.indexOf) {
+                                <td class="px-4 py-2">{{ driver.telefono }}</td>
+                                <td class="px-4 py-2">{{ driver.correo }}</td>
+                                <td class="px-4 py-2">{{ driver.edad }}</td>
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <button (click)="aparecePerro()">aperece un perro</button>
-        @if(apareceImagen){
-            <img src="{{dogImage}}" alt="Imagen de perro" height="200" width="200">
-        }
-        @else {
-            <img src="" alt="Aquí debia haber una imagen de un buabua" height="200" width="200">
-        }
     </footer>
+    
+
+    <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Dog Api</h1>
+         <img src="https://i.ibb.co/9q23YNJ/dogApi.jpg" alt="dogApi" alt="" class="h-48 w-48">
+   
+    <div> 
+        @if(apareceImagen){
+            <div class="flex justify-center items-center mt-8">
+                <img src="{{dogImage}}" alt="Imagen de perro" class="h-64 w-64" />
+            </div>
+        }
+        @else{
+            <div class="flex justify-center items-center mt-8">
+                <img src="" alt="Aquí debía haber una imagen de un perro" class="h-64 w-64" />
+            </div>
+        }
+        <br>
+        <div class="flex justify-center items-center mb-8">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="aparecePerro()">Aparece un perro</button>
+        </div>
+    </div>
 
 </body>
