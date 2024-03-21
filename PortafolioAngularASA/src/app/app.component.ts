@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Driver } from './models/driver';
-import { DriverService } from './services/driver.service';
 import PortafolioComponent from "./portafolio/portafolio.component";
 
 @Component({
@@ -13,16 +11,8 @@ import PortafolioComponent from "./portafolio/portafolio.component";
 })
 export class AppComponent {
   title = 'PortafolioAngularASA';
-  drivers: Driver[]=[];
 
-  constructor(private driverService: DriverService){}
+  constructor(){}
 
-  ngOnInit(): void{
-
-    this.driverService.getDriver().subscribe((result: Driver[]) => {
-
-      this.drivers = result;
-
-    });
-}
+  ngOnInit(): void{}
 }

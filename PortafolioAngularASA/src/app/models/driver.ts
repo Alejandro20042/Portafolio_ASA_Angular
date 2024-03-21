@@ -5,8 +5,4 @@ export class Driver{
     telefono = "";
     descripcion = "";
     correo = "";
-
-
-
-
 }

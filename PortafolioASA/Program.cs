@@ -14,6 +14,7 @@ builder.Services.AddSingleton<PortafolioServices>();
 
 builder.Services.AddCors(options => options.AddPolicy("AngularClient", policy =>  {
     policy.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+    policy.AllowAnyOrigin();
 }));
 
 var app = builder.Build();

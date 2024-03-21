@@ -13,7 +13,7 @@ import { ApiDogService } from '../services/api-dog.service';
 })
 export default class PortafolioComponent {
     title = 'Portafolio.App'
-    drivers: Driver[]=[];
+    drivers: Driver[] = [];
     dogImage: string = '';
     apareceImagen: boolean = true;
     constructor(private driverService: DriverService, private apiDogServivce: ApiDogService){}

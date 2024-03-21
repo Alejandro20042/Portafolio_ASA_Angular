@@ -11,12 +11,9 @@ export class DriverService{
 
     url = 'drivers';
 
-    constructor(private http: HttpClient)
-    {
+    constructor(private http: HttpClient) {}
 
-    }
     public getDriver():Observable<Driver[]>{
-
-        return this.http.get<Driver[]>(`${environment.apiUrl}`);
+        return this.http.get<Driver[]>(`${environment.apiUrl}/PortafolioASA`);
     }
 }

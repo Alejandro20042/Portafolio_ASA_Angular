@@ -1,4 +1,4 @@
-<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen" >
+<div class="bg-gray-100 flex flex-col items-center justify-center min-h-screen" >
 
     <section class="py-10 md:py-16 w-full max-w-screen-xl mx-auto px-4">
 
@@ -11,7 +11,7 @@
             <div class="flex justify-center mb-8" style="height: 120px;">
                 <img src="https://i.ibb.co/gZGZ66t/avatar.png" alt="Image">
             </div>
-            <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-4">{{this.drivers[0].nombre }}</h6>
+            <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-4">{{this.drivers.length > 0 && drivers[0].nombre }}</h6>
             <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-6">Junior Backend Developer</h1>
             <p class="font-normal text-gray-600 text-md md:text-xl mb-10">Tengo pasión por el software. Disfruto creando herramientas que hagan la vida más fácil a las personas.</p>
             <a href="#" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Contratame😊</a>
@@ -109,7 +109,7 @@
         </div>
 
         <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Experiencia</h1>
-        <p class="font-normal text-gray-500 text-xs md:text-base mb-10">Alta experiencia en {{this.drivers[0].descripcion}}, Tengo una amplia experiencia en el desarrollo de aplicaciones utilizando tecnologías como .NET, Angular, y Xamarin. He trabajado en proyectos que involucran tanto bases de datos SQL como NoSQL, demostrando mi capacidad para diseñar y optimizar esquemas de bases de datos para diferentes tipos de aplicaciones. Mi experiencia incluye el desarrollo de aplicaciones móviles con Xamarin, así como el desarrollo de aplicaciones web dinámicas y escalables con Angular. Además, tengo un sólido conocimiento en el uso de tecnologías de backend en el entorno .NET, lo que me permite crear soluciones robustas y eficientes para una variedad de necesidades empresariales.</p>
+        <p class="font-normal text-gray-500 text-xs md:text-base mb-10">Alta experiencia en {{this.drivers.length > 0 && this.drivers[0].descripcion}}, Tengo una amplia experiencia en el desarrollo de aplicaciones utilizando tecnologías como .NET, Angular, y Xamarin. He trabajado en proyectos que involucran tanto bases de datos SQL como NoSQL, demostrando mi capacidad para diseñar y optimizar esquemas de bases de datos para diferentes tipos de aplicaciones. Mi experiencia incluye el desarrollo de aplicaciones móviles con Xamarin, así como el desarrollo de aplicaciones web dinámicas y escalables con Angular. Además, tengo un sólido conocimiento en el uso de tecnologías de backend en el entorno .NET, lo que me permite crear soluciones robustas y eficientes para una variedad de necesidades empresariales.</p>
 
     </section>
 
@@ -160,4 +160,4 @@
         </div>
     </div>
 
-</body>
+</div>
